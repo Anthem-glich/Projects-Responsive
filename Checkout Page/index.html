@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://kit.fontawesome.com/cdd1b68e29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Checkout</h1>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="forms">
+      <section class="contact-info form">
+        <h2>Contact Information</h2>
+        <form action="#" method="POST">
+          <div class="form-info">
+            <label for="email">E-mail</label>
+            <i class="fa-solid fa-envelope"></i>
+            <input id="email" name="email" type="email" placeholder="Enter your email...">
+          </div>
+          <div class="form-info">
+            <label for="email">Phone</label>
+            <i class="fa-solid fa-phone"></i>
+            <input id="email" name="email" type="email" placeholder="Enter your email...">
+          </div>
+        </form> 
+      </section>
+
+      <section class="shipping-info form">
+        <h2>Shipping address</h2>
+        <form action="#" method="POST">
+          <div class="form-info">
+            <label for="first-name">E-mail</label>
+            <i class="fa-solid fa-user-circle"></i>
+            <input id="first-name" name="first-name" type="text" placeholder="Atharva Srivastava">
+          </div>
+          <div class="form-info">
+            <label for="address">Address</label>
+            <i class="fa-solid fa-home"></i>
+            <input id="address" name="address" type="text" placeholder="Your address...">
+          </div>
+          <div class="form-info">
+            <label for="city">City</label>
+            <i class="fa-solid fa-city"></i>
+            <input id="city" name="city" type="text" placeholder="Your city...">
+          </div>
+
+          <div class="two-col-info">
+              <div class="form-info two-col">
+                <label for="country">Country</label>
+                <i class="fa-solid fa-globe-americas"></i>
+                <input id="country" name="country" type="text" placeholder="Your country...">
+              </div>
+              <div class="form-info two-col">
+                <label for="postal">Postal code</label>
+                <i class="fa-solid fa-box"></i>
+                <input id="postal" name="postal" type="text" placeholder="Your postal code...">
+              </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="submit-info">
+        <p class="save-info"><input class="check" type="checkbox"> Save this information for next time</p>
+        <p class="btn-submit"><button class="btn-continue" type="submit">Continue</button></p>
+      </section>
+    </div>
+
+    <section class="cart">
+      <div class="cart-item">
+        <img class="item-img" src="./photo1.png" alt="">
+        <div class="item-info">
+          <div class="name-price">
+            <h3>Vintage Bagpack</h3>
+            <p class="price"><span class="discounted-price">$54.99</span><span class="original-price">$94.99</span></p>
+          </div>
+          <div class="cart-input-container">
+            <span class="plus">+</span>
+            <input class="number-input" type="number" value="1">
+            <span class="minus">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img class="item-img" src="./photo2.png" alt="">
+        <div class="item-info">
+          <div class="name-price">
+            <h3>Levi Shoes</h3>
+            <p class="price"><span class="discounted-price">$74.99</span><span class="original-price">$124.99</span></p>
+          </div>
+          <div class="cart-input-container">
+            <span class="plus">+</span>
+            <input class="number-input" type="number" value="1">
+            <span class="minus">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bill">
+        <hr>
+        <div class="bill-item">
+          <h3>Shipping</h3>
+          <p>$19</p>
+        </div>
+        <hr>
+        <div class="bill-item">
+          <h3>Total</h3>
+          <p>$148.98</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-text">created by <span>atharva</span> - devChallenges.io</p>
+  </footer>
+</body>
+</html>

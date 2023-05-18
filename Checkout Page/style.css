@@ -1,0 +1,339 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    margin: auto;
+}
+
+/* Header */
+header {
+    margin-top: 3rem;
+}
+header h1 {
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    color: #4E5150;
+    margin-bottom: 5rem;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+
+/* FORMS */
+.forms {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.form h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #333333;
+    margin-bottom: 1.2rem;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-info label {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    /* identical to box height */
+    /* Gray 2 */
+    color: #4F4F4F;
+    margin-bottom: 0.5rem;
+}
+
+.form-info input {
+    /* Gray 3 */
+    border: 1px solid #828282;
+    border-radius: 12px;
+    /* padding: 2rem 0; */
+    height: 5.6rem;
+    width: 100%;
+}
+
+::placeholder {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    /* identical to box height */
+    /* Gray 3 */
+    color: #828282;
+    position: relative;
+    left: 5rem;
+}
+
+.fa-solid {
+    position: absolute;
+    top: 3.7rem;
+    left: 1.5rem;
+    font-size: 2rem;
+    /* Gray 3 */
+    color: #828282;
+}
+
+.contact-info {
+    margin-bottom: 5rem;
+}
+.shipping-info {
+    margin-bottom: 2rem;
+}
+
+.two-col-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.two-col {
+    flex: 1 1 0px;
+}
+
+.save-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.check {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #828282;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.btn-continue {
+    background: #F2994A;
+    border-radius: 12px;
+    border: none;
+    padding: 1.5rem 4rem;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+
+
+/* CART */
+
+
+.cart {
+    display: flex;
+    height: 0%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: #F2F2F2;
+    border-radius: 12px;
+    gap: 3rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.item-img {
+    width: auto;
+    height: 13.5rem;
+    border-radius: 1.5rem;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price {
+    margin-top: 1rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.discounted-price {
+    color: #F2994A;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.original-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-decoration-line: line-through;
+    color: #4E5150;
+}
+
+.cart-input-container {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+}
+
+.number-input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 12rem;
+    appearance: none;
+    padding: 12px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    /* Gray 6 */
+    background: #F2F2F2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.plus,
+.minus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #E0E0E0;
+    border-radius: 4px;
+    color: #828282;
+}
+
+
+
+.plus {
+    left: 10px;
+}
+
+.minus {
+    right: 10px;
+}
+
+.bill {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 10rem;
+}
+
+.bill-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill-item h3 {
+    font-style: normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        /* Gray 1 */
+        color: #333333;
+}
+
+.bill-item p {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: right;
+    /* Gray 1 */
+    color: #333333;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+}
+
+.footer-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.7em;
+    /* identical to box height */
+    text-align: center;
+    color: #BDBDBD;
+}
+
+footer span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Responsive Settings */
+
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .cart {
+        margin-bottom: 5rem;
+    }
+
+    .two-col-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}   

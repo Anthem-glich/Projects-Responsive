@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 60%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+
+    body {
+        width: 95%;
+    }
+}
+
+/* Header */
+
+
+header {
+    margin-bottom: 3rem;
+}
+
+.header {
+    display: inline-block;
+}
+
+.heading {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    /* identical to box height */
+    color: #000000;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.heading-description {
+    display: flex;
+} 
+
+/* Making paragraph's width equal to the h1 width */
+
+.heading-description div {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-grow: 1;
+    width: 0;
+}
+
+.header-para {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    /* Gray 2 */
+    color: #4F4F4F;
+}
+
+
+/* Main */
+.cheesecake-banner {
+    width: 100%;
+}
+
+
+.information-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Ingredients and Instruction */
+
+.Ingredients-and-instruction {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.secondary-heading {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    /* identical to box height */
+    /* Gray 1 */
+    color: #333333;
+    margin-bottom: 3rem;
+}
+
+.Ingredients {
+    margin-bottom: 5rem;
+}
+
+.Ingredients h3 {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    /* identical to box height */
+    /* Gray 1 */
+    color: #333333;
+    margin-bottom: 2.4rem;
+}
+
+.ingredients-list {
+    /* TODO */
+}
+
+.ingredients-list input {
+    width: 2rem;
+    height: 2rem;
+}
+
+.ingredients-list label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    /* or 156% */
+    /* Gray 1 */
+    color: #333333;
+    margin-left: 1.5rem;
+}
+
+.bold {font-weight: bold;}
+.italic {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+/* Aside Card */
+
+.serving-and-timing-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: space-between;
+    padding: 4rem; 
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.2rem;
+    height: fit-content;
+}
+
+.card-item {
+    display: flex;
+}
+
+.item-icon {
+    margin-right: 1rem;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.item-info h6 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    /* Gray 4 */
+    color: #BDBDBD;
+}
+
+.item-info p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    /* identical to box height */
+    /* Orange */
+    color: #333;
+}
+
+.serving-info p {
+    color: #F2994A; 
+}
+
+/* Instructions */
+
+ol {
+    list-style: none;
+    counter-reset: steps;
+}
+
+ol li {
+    counter-increment: steps;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+ol li p{
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    color: #000000;
+}
+
+ol li::before {
+    content: counter(steps);
+    margin-right: 0.5rem;
+    /* padding: 0.5rem; */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    /* identical to box height */
+    color: #FFFFFF;
+    background: #F2994A;
+    border-radius: .6rem;
+    padding: .5rem 1rem;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 768px) {
+    .information-section {
+        flex-direction: column-reverse;
+    }
+
+    .Ingredients-and-instruction {
+        max-width: 100%;
+    }
+
+    .serving-and-timing-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+    }
+    .serving {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+}
